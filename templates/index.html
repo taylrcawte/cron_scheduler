@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cron Job Scheduler</title>
+</head>
+<body>
+    <h1>Schedule a Cron Job</h1>
+    <form method="POST" action="/schedule">
+        <label for="command">Command:</label>
+        <input type="text" name="command" id="command" required><br>
+
+        <label for="schedule">Cron Schedule:</label>
+        <input type="text" name="schedule" id="schedule" required><br>
+
+        <input type="submit" value="Schedule">
+    </form>
+</body>
+</html>
+
